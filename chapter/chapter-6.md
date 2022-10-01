@@ -106,4 +106,40 @@ git commit -am "Use a nonexistent tool."
 git push platform updates
 ```
 
+L'activité échouera et lorsque vous inspecterez les journaux, vous verrez l'erreur attendue :
 
+```
+Executing build hook...
+  W: dash: 1: composerb: not found
+```
+
+Pour résoudre ce problème, vous pouvez soit mettre à jour la faute de frappe et pousser un nouveau commit, soit annuler le précédent `push`. Pour cela, pour commencer, exécutons la commande `git log` ou `git log --oneline -5` :
+
+```
+git log --oneline -5
+```
+
+
+```
+805f3b4 (HEAD -> updates, platform/updates) Use a nonexistent tool.
+91e8ce9 Personalization of default messages
+a266f17 Add Platform.sh configuration.
+af0e385 Init certification practices start files
+6f4493c Initialize environment from 'https://github.com/platformsh-templates/php.git@master'
+```
+
+Annulez le commit précédent à l'aide de son hachage d'identification :
+
+```
+git revert 805f3b4 --no-edit
+```
+
+Le systeme vous informe de l'annulation
+
+```
+[updates e5ce289] Revert "Use a nonexistent tool."
+ Date: Sat Oct 1 19:22:41 2022 +0200
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```
+
+Et si vous consultez le fichier `.platform.app.yml`, vous constaterez qu'il est revenu à sa version précédente.
