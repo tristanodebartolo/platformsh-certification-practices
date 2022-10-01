@@ -25,6 +25,7 @@ Assurez-vous de regarder attentivement la première page, car elle décrit les c
 7. [Fusionnez votre révision](./chapter/chapter-7.md)
 8. [Comment fonctionnent les données ?](./chapter/chapter-8.md)
 9. [Montrez-moi les données](./chapter/chapter-9.md)
+10. [Créer un service](./chapter/chapter-10.md)
 
 ## Pré-requis
 

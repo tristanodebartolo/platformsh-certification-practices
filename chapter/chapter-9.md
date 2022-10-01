@@ -120,6 +120,66 @@ Maintenant dans la direction opposée, dans votre terminal, encore extrait de `d
 ```
 platform environment:merge -y
 ```
+![Build du projet](./img/bo-027.jpg)
+
+Une fois l'activité terminée, vérifiez le montage désormais disponible sur la branche de production (`main`) :
+
+```
+platform ssh -e main -q 'cat data/data.txt'
+```
+Résultat :
+```
+cat: data/data.txt: No such file or directory
+```
+Alors que le montage est maintenant présent sur l'environnement de production, le fichier ne l'est pas. Les données sont héritées par l'environnement enfant de leurs parents, mais ne remontent pas via les fusions. La seule façon de passer à la production est via des commits.
+
+
+## [Synchronisation des données](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/data-services/mounts.html#syncing-data)
+
+Connectez-vous en SSH dans l'environnement de production :
+
+```
+platform ssh -e main
+```
+
+Dans cette session, créez un nouveau fichier de données dans le montage :
+
+```
+echo "PRODUCTION data file." > data/data.txt
+```
+
+Fermez ensuite la session en utilisant `ctrl + d` ou `exit`. Toujours sur la branche `data`, exécutez la commande suivante :
+
+```
+platform environment:sync data
+```
+
+Let the activity complete, then run:
+
+```
+platform ssh -e data -q 'cat data/data.txt'
+```
+Résultat:
+```
+PRODUCTION data file.
+```
+
+Avec la commande ci-dessus, vous avez resynchronisé les données de production avec l'environnement enfant, `data`.
+
+
+## [Résumer](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/data-services/mounts.html#recap)
+
+Bien que les données soient traitées légèrement différemment du code, les environnements Platform.sh héritent également des données de leurs environnements parents en tirant parti de Git.
+
+- Il est possible de définir des montages (**volume**), qui conservent l'accès en écriture au moment de l'exécution pour contenir et réviser les données dans les fichiers.
+- La création de branches enfants à partir d'un environnement parent (production ou autre) hérite automatiquement de toutes les données des **volumes** des environnements parent.
+- À tout moment, vous pouvez resynchroniser les données dans un environnement de développement enfant pour faire correspondre sa donnée avec l'environnement parent avec la commande `platform environment:sync`.
+
+L'héritage des données de production est la façon dont Platform.sh fournit de véritables environnements de `staging` pour votre travail. Les données de production, l'infrastructure héritée et les builds réutilisables garantissent la cohérence et la prévisibilité de l'ensemble du processus afin que vous puissiez savoir avec certitude que le comportement en staging correspondra au comportement en production lors de la fusion.
+
+Cependant, les données dans les fichiers ne sont pas les seules données qui vous intéressent. Platform.sh gère les données de production au sein des services exactement de la même manière. Tout comme les montages de volume, `mount`, Platform.sh fournit une configuration versionnable pour les services d'une manière entièrement gérée.
+
+Donc, avant de voir comment les données sont héritées dans les bases de données et autres services, vous verrez, dans le chapitre suivant, comment créer des services à l'aide de la configuration des services de Platform.sh.
 
 
 
