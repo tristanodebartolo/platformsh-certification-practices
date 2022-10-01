@@ -23,7 +23,7 @@ Assurez-vous de regarder attentivement la première page, car elle décrit les c
 5. [Que s'est-il passé ?](./chapter/chapter-5.md)
 6. [Créer un environnement](./chapter/chapter-6.md)
 7. [Fusionnez votre révision](./chapter/chapter-7.md)
-8. []()
+8. [Comment fonctionnent les données ?](./chapter/chapter-8.md)
 
 ## Pré-requis
 
