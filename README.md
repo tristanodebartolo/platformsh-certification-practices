@@ -24,9 +24,11 @@ Assurez-vous de regarder attentivement la première page, car elle décrit les c
 6. [Créer un environnement](./chapter/chapter-6.md)
 7. [Fusionnez votre révision](./chapter/chapter-7.md)
 8. [Comment fonctionnent les données ?](./chapter/chapter-8.md)
+9. [Montrez-moi les données](./chapter/chapter-9.md)
 
 ## Pré-requis
 
 - Git
 - Un IDE (PhpStorm/Visual Studio Code etc)
 - Composer (Facultatif si vous ne builder pas en local)
+

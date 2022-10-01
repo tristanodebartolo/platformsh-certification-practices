@@ -36,18 +36,20 @@ Pour cette raison, la construction peut être réutilisée et la phase de constr
 
 ## [Et après](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/git-started/merge.html#whats-next)
 
-Ceci conclut la deuxième partie de ce qui rend Platform.sh si utile. Lors du développement d'une application de production, vous devrez inévitablement y apporter des modifications au jour le jour. Expérimenter ces changements nécessite de développer un environnement qui correspond le plus possible à la production - souvent appelé environnement de « mise en scène ». La raison pour laquelle vous souhaitez que les environnements de « mise en scène » correspondent si étroitement à la production est que vous pouvez être assuré que :
+Ceci conclut la deuxième partie de ce qui rend **Platform.sh** si utile.
 
-1. Les choses qui fonctionnent dans la mise en scène continueront de fonctionner dans la production.
-2. Rien d'inattendu ne se produit dans l'acte de fusionner avec la production.
+Lors du développement d'une application en production, il faut inévitablement y apporter des modifications au jour le jour. Expérimenter ces changements nécessite de développer sur des environnements - souvent appelé environnement de « mise en scène » `staging` - qui correspondent le plus possible à l'environnement de production. Les raisons pour laquelles vous souhaitez que ces environnements de `staging` correspondent le plus possible à l'environnement de production est que vous devez vous assurer que :
 
-Sur Platform.sh, fusionner en production signifie simplement réutiliser une image de build préexistante d'un environnement de développement sur l'environnement de production. Cette image de construction est immuable par conception et ne subira pas de nouvelles étapes qui se briseront lors de l'acte de fusion.
+1. Les choses qui fonctionnent sur l'environnement de `staging` continue de fonctionner sur l'environnement de `production`.
+2. Que rien d'inattendu ne se produise durant l'opération de fusion des branches de travail avec la production.
 
-Il manque bien sûr un élément important pour vous convaincre de ce processus : les données. Jusqu'à présent, les environnements de développement sur Platform.sh correspondent à la production en ce qui concerne l'infrastructure, mais sans données de production, nombre de vos tests ne pourront pas approuver de manière adéquate qu'une nouvelle fonctionnalité fonctionnera comme prévu lorsque vos utilisateurs commenceront à interagir avec elle en production.
+Sur Platform.sh, fusionner en production signifie simplement réutiliser une image de build préexistante d'un environnement de développement sur l'environnement de production. Cette image de construction est immuable par conception et ne subira pas de nouvelles étapes qui se briseront lors du déploiement.
 
-Dans le prochain guide, vous verrez comment Platform.sh fournit un certain nombre de services gérés - des conteneurs de services communs rapidement configurables (c'est-à-dire des bases de données) - qui sont validés et hérités dans les environnements de développement, tout comme les conteneurs d'applications. Vous allez ajouter des données à l'environnement et voir comment Platform.sh utilise Git pour fournir automatiquement des données de production à chaque environnement de développement.
+Il manque bien sûr un élément important pour vous convaincre de ce processus : **les données**, la base de donnée. Jusqu'à présent, les environnements de développement sur Platform.sh sont identiques à l'environnement de production, `main`, en ce qui concerne l'infrastructure, les configurations, mais il n'y a pas de données de production. Sans données de production, bon nombre de vos tests seront incapables de valider de manière adéquate qu'une nouvelle fonctionnalité fonctionne comme prévu lorsque vos utilisateurs commenceront à interagir avec elle en production..
 
-Avec ces fonctionnalités, git branch devient une commande qui génère des copies exactes de la production - de véritables environnements de staging - sur lesquels vous pouvez travailler.
+Dans le prochain chapitre, vous verrez comment Platform.sh fournit un certain nombre de services rapidement configurables (comme par exemple des bases de données) - que nos environnements de développement pourront hériterons, tout comme les conteneurs d'applications. Vous allez ajouter des données à l'environnement et voir comment Platform.sh utilise Git pour fournir automatiquement des données de production à chaque environnement de développement.
+
+Avec ces fonctionnalités, `git branch` devient une commande qui génère des copies exactes de l'environnement de production - de véritables environnements de staging - sur lesquels vous pouvez travailler.
 
 Regardons ça.
 
