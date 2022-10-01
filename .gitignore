@@ -3,3 +3,7 @@ vendor/*
 # Ignore mounts
 web/uploads
 private
+
+# IDE and Mac files
+.DS_Store
+.idea/

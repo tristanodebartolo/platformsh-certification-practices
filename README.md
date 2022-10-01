@@ -1,29 +1,31 @@
-# Basic PHP for Platform.sh
+# Certification Practices Platform.sh
 
-<p align="center">
-<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/php/.platform.template.yaml&utm_content=php&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
-    <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="180px" />
-</a>
-</p>
+## Bienvenue à la certification Platform.sh Agency Partner Beginner !
 
-This template provides the most basic configuration for running a custom PHP project built with Composer.  It includes but doesn't make use of the Platform.sh `config-reader` library.  It can be used to build a very rudimentary application but is intended primarily as a documentation reference.
+Ce premier guide est destiné à vous fournir les compétences dont vous avez besoin pour commencer à travailler avec Platform.sh, en couvrant les deux concepts les plus importants fournis par la plateforme :
 
-PHP is a high-performance scripting language especially well suited to web development.
+- **Commençons avec Git !** : Projets, environnements, configuration de l'infrastructure en tant que code et bases de la création de branches et de la fusion.
 
-## Features
+- **Comment fonctionnent les données ?** : les environnements Platform.sh sont de véritables environnements intermédiaires, en particulier parce que les données de production peuvent être héritées sur chaque environnement que vous créez.
 
-* PHP 8.0
-* Automatic TLS certificates
-* Composer-based build
+Lorsque vous avez terminé toutes les formations, répondez au quiz de vérification des connaissances sur la page d'accueil de Learning Track.
 
-## Customizations
+Assurez-vous de regarder attentivement la première page, car elle décrit les connaissances préalables et certains outils nécessaires pour toutes les formations à venir
 
-The following files are of particular importance.  If using this project as a reference for your own existing project, replicate the changes below to your project.
 
-* The `.platform.app.yaml`, `.platform/services.yaml`, and `.platform/routes.yaml` files have been added.  These provide Platform.sh-specific configuration and are present in all projects on Platform.sh.  You may customize them as you see fit.
-* A Composer library, [`platformsh/config-reader`](https://github.com/platformsh/config-reader-php), has been added.  It provides convenience wrappers for accessing the Platform.sh environment variables.
+## Sommaire
 
-## References
-
-* [PHP](https://php.net/)
-* [PHP on Platform.sh](https://docs.platform.sh/languages/php.html)
+1. [A quoi servent ces guides ?](./chapter/chapter-1.md)
+2. [Commençons avec Git !](./chapter/chapter-2.md)
+3. [Qu'est-ce que Platform.sh ?](./chapter/chapter-3.md)
+4. [Déployez votre premier projet](./chapter/chapter-4.md)
+5. [Qu'est-ce qui vient juste de se passer?](./chapter/chapter-5.md)
+6. []()
+7. []()
+8. []()
+9. []()
+10. []()
+11. []()
+12. []()
+13. []()
+14. []()
