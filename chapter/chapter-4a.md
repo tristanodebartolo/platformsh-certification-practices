@@ -1,6 +1,6 @@
 # Déployez un projet via la console.platform.sh
 
-`Certification Practices Platform.sh 2022`
+`Platform.sh Certification Practices 2022`
 
 ## Créer un projet via le BO platform
 
@@ -152,3 +152,5 @@ git commit -m "Init certification practices start files"
 ```
 
 - Nous pouvons ainsi retourner à la section [Configurer une application](./chapter-4.md#pour-poursuivre)
+
+[Déployez votre premier projet](./chapter-4.md) | [Sommaire](../README.md.md) | [Que s'est-il passé](./chapter-6.md)

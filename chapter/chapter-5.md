@@ -1,6 +1,6 @@
 # [Que s'est-il passé](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/git-started/deploy.html#what-happened)
 
-`Certification Practices Platform.sh 2022`
+`Platform.sh Certification Practices 2022`
 
 ### [L'environnement](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/git-started/deploy.html#the-environment)
 
@@ -264,4 +264,5 @@ C'est peut-être le point le plus important à comprendre lorsque vous travaille
 
 Ce n'est pas le seul moyen de mettre à jour la version du **build** et de créer de nouvelle image de version. Dans la suite de cette formation, vous verrez des builds d'image réutilisables lors de la création de branches - la création de nouveaux environnements de développement. Et puis ensuite, vous verrez comment, dans ces environnements, apporterez d'autres modifications afin d'affecter ce processus.
 
-[Chapitre précédent](./chapter-4.md) | [Créer un environnement](./chapter-6.md)
+[Chapitre précédent](./chapter-4.md) | [Sommaire](../README.md.md) | [Chapitre suivant](./chapter-6.md)
+

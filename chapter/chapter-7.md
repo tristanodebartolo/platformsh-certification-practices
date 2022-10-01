@@ -1,5 +1,7 @@
 # Fusionnez votre révision
 
+`Platform.sh Certification Practices 2022`
+
 ## [Fusionner](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/git-started/merge.html#merge)
 
 Dans votre terminal, exécutez la commande :
@@ -48,3 +50,6 @@ Dans le prochain guide, vous verrez comment Platform.sh fournit un certain nombr
 Avec ces fonctionnalités, git branch devient une commande qui génère des copies exactes de la production - de véritables environnements de staging - sur lesquels vous pouvez travailler.
 
 Regardons ça.
+
+[Chapitre précédent](./chapter-6.md) | [Sommaire](../README.md.md) | [Chapitre suivant](./chapter-8.md)
+

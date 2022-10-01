@@ -1,6 +1,6 @@
 # [Create an environment](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/git-started/branch.html#create-an-environment)
 
-`Certification Practices Platform.sh 2022`
+`Platform.sh Certification Practices 2022`
 
 ## Création d'une nouvelle branche de travail
 
@@ -166,3 +166,5 @@ Building application 'app' (runtime type: php:8.0, tree: 16ac3b1)
 C'est un autre endroit utile où les builds réutilisables apparaissent. Avec Git, n'importe quel état du référentiel peut être extrait ou restauré à tout moment. De même, tout état de votre application - y compris son infrastructure - est également accessible via un git revert. Cette fonctionnalité facilite la restauration des fonctionnalités sur Platform.sh.
 
 Il y a un autre endroit où ce concept est important : la fusion `merge` des environnements.
+
+[Chapitre précédent](./chapter-5.md) | [Sommaire](../README.md.md) | [Chapitre suivant](./chapter-7.md)

@@ -1,6 +1,6 @@
 # Déployez votre premier projet
 
-`Certification Practices Platform.sh 2022`
+`Platform.sh Certification Practices 2022`
 
 ## [Créer un projet](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/git-started/first-project.html#create-a-project)
 
@@ -227,4 +227,5 @@ https://main-bvxea6i-rd33ou34jopkc.fr-4.platformsh.site/
 
 ![Console platform.sh](./img/bo-013.jpg)
 
-[Chapitre précédent](./chapter-3.md) | [Chapitre suivant](./chapter-5.md)
+[Chapitre précédent](./chapter-4.md) | [Sommaire](../README.md.md) | [Chapitre suivant](./chapter-5.md)
+
