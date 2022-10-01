@@ -4,4 +4,4 @@
 
 ## [h2](link)
 
-[Chapitre précédent](./chapter-x.md) | [Sommaire](../README.md.md) | [Chapitre suivant](./chapter-x.md)
+[Chapitre précédent](./chapter-x.md) | [Sommaire](../README.md) | [Chapitre suivant](./chapter-x.md)

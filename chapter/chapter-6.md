@@ -167,4 +167,4 @@ C'est un autre endroit utile où les builds réutilisables apparaissent. Avec Gi
 
 Il y a un autre endroit où ce concept est important : la fusion `merge` des environnements.
 
-[Chapitre précédent](./chapter-5.md) | [Sommaire](../README.md.md) | [Chapitre suivant](./chapter-7.md)
+[Chapitre précédent](./chapter-5.md) | [Sommaire](../README.md) | [Chapitre suivant](./chapter-7.md)

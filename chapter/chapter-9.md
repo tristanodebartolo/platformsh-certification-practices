@@ -184,4 +184,4 @@ Donc, avant de voir comment les données sont héritées dans les bases de donn�
 
 
 
-[Chapitre précédent](./chapter-8.md) | [Sommaire](../README.md.md) | [Chapitre suivant](./chapter-10.md)
+[Chapitre précédent](./chapter-8.md) | [Sommaire](../README.md) | [Chapitre suivant](./chapter-10.md)

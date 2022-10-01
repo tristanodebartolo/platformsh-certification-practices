@@ -17,4 +17,4 @@ Dans la section précédente, vous avez vu comment Git a été exploité dans la
 
 
 
-[Chapitre précédent](./chapter-7.md) | [Sommaire](../README.md.md) | [Chapitre suivant](./chapter-9.md)
+[Chapitre précédent](./chapter-7.md) | [Sommaire](../README.md) | [Chapitre suivant](./chapter-9.md)

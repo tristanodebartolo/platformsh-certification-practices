@@ -89,4 +89,4 @@ platform list
 
 Après cela, vous êtes prêt à démarrer avec Platform.sh et à déployer votre première application.
 
-[Sommaire](../README.md.md) | [Chapitre suivant](./chapter-2.md)
+[Sommaire](../README.md) | [Chapitre suivant](./chapter-2.md)

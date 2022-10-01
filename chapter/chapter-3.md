@@ -28,7 +28,7 @@ Platform.sh est construit autour de l'idée de développement itératif. Étant 
 
 À ce stade, il sera très utile de passer par un exemple. Une fois que vous aurez l'occasion d'utiliser Platform.sh, vous aurez une bien meilleure idée de son utilité pour résoudre ces problèmes courants. Dans ce guide, vous allez déployer une application et expérimenter de nouvelles modifications dans un environnement de développement isolé. Après cela, vous aurez l'occasion d'étudier exactement comment Platform.sh gère les builds et les fusions.
 
-[Chapitre précédent](./chapter-2.md) | [Sommaire](../README.md.md) | [Chapitre suivant](./chapter-4.md)
+[Chapitre précédent](./chapter-2.md) | [Sommaire](../README.md) | [Chapitre suivant](./chapter-4.md)
 
 
 

@@ -53,5 +53,5 @@ Avec ces fonctionnalités, `git branch` devient une commande qui génère des co
 
 Regardons ça.
 
-[Chapitre précédent](./chapter-6.md) | [Sommaire](../README.md.md) | [Chapitre suivant](./chapter-8.md)
+[Chapitre précédent](./chapter-6.md) | [Sommaire](../README.md) | [Chapitre suivant](./chapter-8.md)
 

@@ -80,5 +80,14 @@ C'est ici qu'il faudra se rendre si nous avons besoin de modifier les configurat
 
 ![Build du projet](./img/bo-036.jpg)
 
+Il nous reste à relier notre repo Github à notre projet existant.
+Valider toutes vos modifications et positionnez-vous sur la branche `main`.
 
-[Chapitre précédent](./chapter-x.md) | [Sommaire](../README.md.md) | [Chapitre suivant](./chapter-x.md)
+```
+git checkout main
+git remote add origin git@github.com:tristanodebartolo/platformsh-certification-practices.git
+git branch -M main
+git push -u origin main
+```
+
+[Chapitre précédent](./chapter-x.md) | [Sommaire](../README.md) | [Chapitre suivant](./chapter-x.md)

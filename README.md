@@ -27,6 +27,16 @@ Assurez-vous de regarder attentivement la première page, car elle décrit les c
 9. [Montrez-moi les données](./chapter/chapter-9.md)
 10. [Créer un service](./chapter/chapter-10.md)
 11. [Utiliser le service](./chapter/chapter-11.md)
+12. []()
+13. []()
+14. []()
+15. []()
+16. []()
+17. [Connecter son projet platform.sh à Github](./chapter/connect-github.md)
+
+
+
+
 
 ## Pré-requis
 

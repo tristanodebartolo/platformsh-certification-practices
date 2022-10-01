@@ -44,4 +44,4 @@ Voici un bref aperçu de ce qui sera couvert dans cette section :
   </tbody>
 </table>
 
-[Chapitre précédent](./chapter-1.md) | [Sommaire](../README.md.md) | [Chapitre suivant](./chapter-3.md)
+[Chapitre précédent](./chapter-1.md) | [Sommaire](../README.md) | [Chapitre suivant](./chapter-3.md)

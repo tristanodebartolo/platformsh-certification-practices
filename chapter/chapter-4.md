@@ -227,5 +227,5 @@ https://main-bvxea6i-rd33ou34jopkc.fr-4.platformsh.site/
 
 ![Console platform.sh](./img/bo-013.jpg)
 
-[Chapitre précédent](./chapter-4.md) | [Sommaire](../README.md.md) | [Chapitre suivant](./chapter-5.md)
+[Chapitre précédent](./chapter-4.md) | [Sommaire](../README.md) | [Chapitre suivant](./chapter-5.md)
 

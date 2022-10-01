@@ -179,4 +179,4 @@ Sinon, tout reste isolé, ce qui rend vos environnements et vos données sécuri
 Maintenant que vous avez ajouté un service et que vous pouvez vous connecter à ce service via des variables d'environnement, l'étape suivante consiste à utiliser ces connaissances pour interagir avec la base de données directement depuis votre application.
 
 
-[Chapitre précédent](./chapter-9.md) | [Sommaire](../README.md.md) | [Chapitre suivant](./chapter-11.md)
+[Chapitre précédent](./chapter-9.md) | [Sommaire](../README.md) | [Chapitre suivant](./chapter-11.md)
