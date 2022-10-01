@@ -22,7 +22,8 @@ Assurez-vous de regarder attentivement la première page, car elle décrit les c
    - [Déployez un projet via la console.platform.sh](./chapter/chapter-4.md)
 5. [Que s'est-il passé ?](./chapter/chapter-5.md)
 6. [Créer un environnement](./chapter/chapter-6.md)
-7. []()
+7. [Fusionnez votre révision](./chapter/chapter-7.md)
+8. []()
 
 ## Pré-requis
 

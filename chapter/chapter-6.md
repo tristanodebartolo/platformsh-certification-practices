@@ -1,6 +1,8 @@
+# [Create an environment](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/git-started/branch.html#create-an-environment)
+
 `Certification Practices Platform.sh 2022`
 
-## [Create an environment](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/git-started/branch.html#create-an-environment)
+## Création d'une nouvelle branche de travail
 
 Depuis votre terminal lancez la commande :
 
@@ -113,15 +115,17 @@ Executing build hook...
   W: dash: 1: composerb: not found
 ```
 
+![Console platform.sh](./img/bo-022.jpg)
+
 Pour résoudre ce problème, vous pouvez soit mettre à jour la faute de frappe et pousser un nouveau commit, soit annuler le précédent `push`. Pour cela, pour commencer, exécutons la commande `git log` ou `git log --oneline -5` :
 
 ```
 git log --oneline -5
 ```
 
-
 ```
 805f3b4 (HEAD -> updates, platform/updates) Use a nonexistent tool.
+94b0817 Update message for update branch.
 91e8ce9 Personalization of default messages
 a266f17 Add Platform.sh configuration.
 af0e385 Init certification practices start files
@@ -134,7 +138,7 @@ Annulez le commit précédent à l'aide de son hachage d'identification :
 git revert 805f3b4 --no-edit
 ```
 
-Le systeme vous informe de l'annulation
+Le système vous informe de l'annulation
 
 ```
 [updates e5ce289] Revert "Use a nonexistent tool."
@@ -143,3 +147,22 @@ Le systeme vous informe de l'annulation
 ```
 
 Et si vous consultez le fichier `.platform.app.yml`, vous constaterez qu'il est revenu à sa version précédente.
+
+N'oublier pas de Pousser le commit d'annulation sur Platform.sh.
+
+```
+git push platform updates
+```
+![Console platform.sh](./img/bo-023.jpg)
+
+Dans l'activité résultante, vous verrez que l'ID de l'arborescence précédente est détectée par le nouveau commit, et que donc, l'image du build précédent peut être réutilisée.
+
+```
+Found 1 new commits
+Building application 'app' (runtime type: php:8.0, tree: 16ac3b1)
+  Reusing existing build for this tree ID
+```
+
+C'est un autre endroit utile où les builds réutilisables apparaissent. Avec Git, n'importe quel état du référentiel peut être extrait ou restauré à tout moment. De même, tout état de votre application - y compris son infrastructure - est également accessible via un git revert. Cette fonctionnalité facilite la restauration des fonctionnalités sur Platform.sh.
+
+Il y a un autre endroit où ce concept est important : la fusion `merge` des environnements.
