@@ -10,7 +10,7 @@ dependencies:
         composer/composer: '^2'
 
 hooks:
-    build: set -e && composerb install
+    build: composer install
 
 web:
     locations:
