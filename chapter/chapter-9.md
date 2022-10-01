@@ -47,7 +47,7 @@ Lors de l'exécution, le système de fichiers à partir duquel votre application
 
 Cependant, de nombreuses applications nécessitent un accès en écriture à des parties du système de fichiers lors de l'exécution. Si vos utilisateurs téléchargent des fichiers sur votre site, le répertoire dans lequel vous conserveriez ces fichiers en est un exemple.
 
-Sur Platform.sh, vous devez définir explicitement ces types de répertoires en configurant un montage pour votre application à l'aide de l'attribut `mounts`. Ces répertoires ne contiennent pas de fichiers validés, uniquement des données. La modification ci-dessus définit un seul montage accessible dans le système de fichiers à `~/data`, et 512 Mo de disque lui ont été attribués.
+Sur Platform.sh, vous devez définir explicitement ces types de répertoires en configurant un montage pour votre application à l'aide de l'attribut `mounts`. Ces répertoires ne contiennent pas de fichiers versionnés, uniquement des données. La modification ci-dessus définit un seul montage accessible dans le système de fichiers `~/data`, et 512 Mo de disque lui ont été attribués.
 
 Localement, exécutez les commandes suivantes :
 
@@ -73,6 +73,55 @@ Validez et poussez ce changement :
 ```
 git commit -am "Add some data." && git push platform data
 ```
+
+![Build du projet](./img/bo-025.jpg)
+
+Ensuite, télécharger le nouveau fichier dans le `volume` **data** que vous venez de créer sur l'environnement.
+
+```
+platform mount:upload --mount=data --source=data
+```
+
+Vérifiez que les données ont été importées dans l'environnement `data` en exécutant la commande suivante :
+
+```
+platform ssh -e data -q 'cat data/data.txt'
+```
+Résultat :
+```
+First data file.
+```
+
+## [Branches](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/data-services/mounts.html#branches)
+
+Depuis la branche `data`, exécutez la commande suivante :
+
+```
+platform environment:branch data-child
+```
+
+Vous aurez maintenant une structure de projet qui ressemble à ceci dans la console de gestion.
+
+![Build du projet](./img/bo-026.jpg)
+
+Maintenant exécutez la commande :
+
+```
+platform ssh -e data-child -q 'cat data/data.txt'
+```
+
+Vous verrez le contenu de l'environnement précédent : Premier fichier de données de l'environnement `data`. Comme auparavant, cet environnement enfant (`data-child`) a hérité de l'infrastructure de son parent (`data`), mais maintenant il inclut également ses données lors de sa création.
+
+
+## [Fusion](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/data-services/mounts.html#merges)
+
+Maintenant dans la direction opposée, dans votre terminal, encore extrait de `data`, exécutez cette commande :
+
+```
+platform environment:merge -y
+```
+
+
 
 
 [Chapitre précédent](./chapter-8.md) | [Sommaire](../README.md.md) | [Chapitre suivant](./chapter-10.md)
