@@ -85,3 +85,25 @@ Si nous observons les informations de ce nouvel environnement, l'on peut constat
 Consultez cette url pour constater les changements apportés au dernier `push`.
 
 ![Console platform.sh](./img/bo-021.jpg)
+
+## [Annuler de commits](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/git-started/branch.html#reverting-commits)
+
+Chaque commit poussé sur un environnement peut être annulé, pour illustrer cela, nous allons modifier le fichier `.platform.app.yml` afin de lever une erreur en essayant d'installer une librairie qui n'existe pas.
+
+Modifions la commande `build` du paramètre `hooks`du fichier `.platform.app.yml`.
+
+```yml
+hooks:
+    build: set -e && composerb install
+```
+
+Cette ligne modifie le `hook` de construction dans l'objectif d'utiliser un gestionnaire de packages de dépendances qui n'existe pas : `composerb`. Il utilise également la commande `set -e`, ce qui entraînera l'échec du hook de construction étant donné que `composerb` sera introuvable.
+
+Commiter et pusher les modifications sur **platform.sh**.
+
+```
+git commit -am "Use a nonexistent tool."
+git push platform updates
+```
+
+
