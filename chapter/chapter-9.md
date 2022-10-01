@@ -26,14 +26,14 @@ Bien que la branche `updates` existe toujours, il s'agit désormais d'un environ
 
 ### Données
 
-Créez un nouvel environnement appelé data :
+Créez un nouvel environnement appelé `data` :
 
 ```
 git pull platform main
 platform environment:branch data
 ```
 
-Et ajoutons les lignes suivante à la suite du fichier `.platform.app.yaml`.
+Et ajoutons les lignes suivantes à la suite du fichier `.platform.app.yaml`.
 
 ```yml
 disk: 512
@@ -43,9 +43,9 @@ mounts:
         source_path: data
 ```
 
-Lors de l'exécution, le système de fichiers à partir duquel votre application s'exécute est en lecture seule. Vous avez vu dans le chapitre précédent comment cette règle permet d'exploiter Git afin que Platform.sh puisse réutiliser les builds des image.
+Lors de l'exécution, le système de fichiers à partir duquel votre application s'exécute est en lecture seule. Vous avez vu dans le chapitre précédent comment cette règle permet d'exploiter Git afin que Platform.sh puisse réutiliser les **builds des images**.
 
-Cependant, de nombreuses applications nécessitent un accès en écriture à des parties du système de fichiers lors de l'exécution. Si vos utilisateurs téléchargent des fichiers sur votre site, le répertoire dans lequel vous conserveriez ces fichiers en est un exemple.
+Cependant, de nombreuses applications nécessitent un accès en écriture au système de fichiers lors de l'exécution. Si vos utilisateurs téléchargent des fichiers sur votre site, le répertoire dans lequel vous conserveriez ces fichiers en est un exemple.
 
 Sur Platform.sh, vous devez définir explicitement ces types de répertoires en configurant un montage pour votre application à l'aide de l'attribut `mounts`. Ces répertoires ne contiennent pas de fichiers versionnés, uniquement des données. La modification ci-dessus définit un seul montage accessible dans le système de fichiers `~/data`, et 512 Mo de disque lui ont été attribués.
 
@@ -154,7 +154,7 @@ Fermez ensuite la session en utilisant `ctrl + d` ou `exit`. Toujours sur la bra
 platform environment:sync data
 ```
 
-Let the activity complete, then run:
+Laissez l'activité se terminer, puis exécutez :
 
 ```
 platform ssh -e data -q 'cat data/data.txt'
