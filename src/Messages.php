@@ -5,15 +5,11 @@ namespace App;
 
 class Messages
 {
-
-    public function title() : string
-    {
-        return "Hello World";
+    public function title() : string {
+        return "Hello Platform.sh Certification Practices World";
     }
 
-    public function message() : string
-    {
-        return "With love from Platform.sh";
+    public function message() : string {
+        return "With love, coffee and diligence from Platform.sh";
     }
-
 }

@@ -128,7 +128,26 @@ Vous pouvez également remarquer une valeur d'espace réservé, `{default}`. Cet
 
 ## [Déployer](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/git-started/first-project.html#deploy)
 
-Avec ces deux fichiers ajoutés, vous êtes maintenant prêt à déployer l'application sur Platform.sh. Valider et pousser les changements
+Avec ces deux fichiers ajoutés, vous êtes maintenant prêt à déployer l'application sur Platform.sh. Valider et pousser les changements, mais avant cela, apportant quelques modifications à nos fichiers PHP.
+
+- Ouvrons le dossier /src à la racine du projet et remplacer la class `Messages` avec les lignes suivantes
+
+```php
+class Messages
+{
+    public function title() : string {
+        return "Hello Platform.sh Certification Practices World";
+    }
+
+    public function message() : string {
+        return "With love, coffee and diligence from Platform.sh";
+    }
+}
+```
+
+> L'objectif est de personnaliser les messages par défaut du projet.
+
+- Nous pouvons maintenant déployer l'application sur Platform.sh.
 
 ```
 git add .
@@ -137,6 +156,56 @@ git push platform main
 ```
 
 Vous verrez dans votre terminal votre premier aperçu du processus de construction et de déploiement de Platform.sh. Dans le reste du guide, chaque étape de ce processus, ainsi que son fonctionnement, seront abordés de manière beaucoup plus détaillée. Vous pouvez également visiter la console de gestion que vous avez ouverte auparavant et afficher le processus en cours sur **Main** - l'environnement de production actuel de votre projet.
+
+```
+git push platform main
+Counting objects: 100% (42/42), done.
+...
+
+Processing activity: Tristano De Bartolo pushed to Main
+    Found 2 new commits
+
+    Building application 'app' (runtime type: php:8.0, tree: 4175c8e)
+      Generating runtime configuration.
+
+      Installing build dependencies...
+        Installing php build dependencies: composer/composer
+        W: Changed current directory to /app/.global/composer/composer
+        W: No composer.lock file present. Updating dependencies to latest instead of installing from lock file. See https://getcomposer.org/install for more information.
+        W: Loading composer repositories with package information
+        W: Info from https://repo.packagist.org: #StandWithUkraine
+        W: Updating dependencies
+        W: Lock file operations: 27 installs, 0 updates, 0 removals
+        W:   - Locking composer/ca-bundle (1.3.3)
+        W:   - Locking composer/class-map-generator (1.0.0)
+        W:   - Locking composer/composer (2.4.2)
+        ...
+
+      Compressing application.
+      Beaming package to its final destination.
+
+    Provisioning certificates
+      Certificates
+      - certificate a361ea6: expiring on 2022-12-30 09:27:24+00:00, covering {,www}.main-bvxea6i-rd33ou34jopkc.fr-4.platformsh.site
+
+
+    Redeploying environment main
+      Preparing deployment
+      ...
+      Environment configuration
+        app (type: php:8.0, size: S)
+
+      Environment routes
+        http://main-bvxea6i-rd33ou34jopkc.fr-4.platformsh.site/ redirects to https://main-bvxea6i-rd33ou34jopkc.fr-4.platformsh.site/
+        http://www.main-bvxea6i-rd33ou34jopkc.fr-4.platformsh.site/ redirects to https://www.main-bvxea6i-rd33ou34jopkc.fr-4.platformsh.site/
+        https://main-bvxea6i-rd33ou34jopkc.fr-4.platformsh.site/ is served by application `app`
+        https://www.main-bvxea6i-rd33ou34jopkc.fr-4.platformsh.site/ redirects to https://main-bvxea6i-rd33ou34jopkc.fr-4.platformsh.site/
+
+
+To git.fr-4.platform.sh:rd33ou34jopkc.git
+   6f4493c..a266f17  main -> main
+
+```
 
 Une fois le processus terminé, vous devriez voir le même site que vous aviez exécuté localement en cours d'exécution sur une URL générée aléatoirement sur Platform.sh. Vous pouvez trouver le lien de cet environnement dans la console de gestion, ou le récupérer en exécutant la commande `plaform url`.
 
