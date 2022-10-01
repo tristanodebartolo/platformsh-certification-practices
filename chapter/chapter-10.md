@@ -27,7 +27,7 @@ Exécutez la commande ci-dessous pour créer un nouvel environnement de dévelop
 platform environment:branch add-db
 ```
 
-Pour ajouter des services à un environnement, vous devrez ajouter un autre fichier spécifiquement destiné à les configurer. Exécutez la commande suivante :
+Pour ajouter des services à un environnement, vous devez ajouter un autre fichier spécifiquement destiné à les configurer. Exécutez la commande suivante :
 
 ```
 touch .platform/services.yaml

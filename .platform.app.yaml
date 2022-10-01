@@ -23,3 +23,6 @@ mounts:
     'data':
         source: local
         source_path: data
+
+relationships:
+    database: "db:mysql"
