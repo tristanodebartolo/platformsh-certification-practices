@@ -26,6 +26,7 @@ Assurez-vous de regarder attentivement la première page, car elle décrit les c
 8. [Comment fonctionnent les données ?](./chapter/chapter-8.md)
 9. [Montrez-moi les données](./chapter/chapter-9.md)
 10. [Créer un service](./chapter/chapter-10.md)
+11. [Utiliser le service](./chapter/chapter-11.md)
 
 ## Pré-requis
 
