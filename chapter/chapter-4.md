@@ -1,4 +1,6 @@
-# Deploy your first project
+# Déployez votre premier projet
+
+`Certification Practices Platform.sh 2022`
 
 ## [Créer un projet](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/git-started/first-project.html#create-a-project)
 
@@ -207,5 +209,22 @@ To git.fr-4.platform.sh:rd33ou34jopkc.git
 
 ```
 
-Une fois le processus terminé, vous devriez voir le même site que vous aviez exécuté localement en cours d'exécution sur une URL générée aléatoirement sur Platform.sh. Vous pouvez trouver le lien de cet environnement dans la console de gestion, ou le récupérer en exécutant la commande `plaform url`.
+Une fois le processus terminé, vous pouvez trouver le lien de cet environnement dans la console de gestion, ou le récupérer en exécutant la commande `plaform url`.
 
+```
+certification-practices % [main] ± platform url
+Enter a number to open a URL
+  [0] https://main-bvxea6i-rd33ou34jopkc.fr-4.platformsh.site/
+  [1] https://www.main-bvxea6i-rd33ou34jopkc.fr-4.platformsh.site/
+  [2] http://main-bvxea6i-rd33ou34jopkc.fr-4.platformsh.site/
+  [3] http://www.main-bvxea6i-rd33ou34jopkc.fr-4.platformsh.site/
+ > 0
+
+https://main-bvxea6i-rd33ou34jopkc.fr-4.platformsh.site/
+```
+
+- Afin de consulter votre application.
+
+![Console platform.sh](./img/bo-013.jpg)
+
+[Chapitre précédent](./chapter-3.md) | [Chapitre suivant](./chapter-5.md)

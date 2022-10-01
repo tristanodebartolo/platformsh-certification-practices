@@ -1,5 +1,6 @@
-# Certification Practices Platform.sh
+# Commençons avec Git !
 
+`Certification Practices Platform.sh 2022`
 
 ## [Aperçu](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics.html#overview)
 

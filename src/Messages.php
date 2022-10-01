@@ -6,7 +6,7 @@ namespace App;
 class Messages
 {
     public function title() : string {
-        return "Hello Platform.sh Certification Practices World";
+        return "Hello Platform.sh</br> Certification Practices World </br> Update branche";
     }
 
     public function message() : string {

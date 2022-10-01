@@ -1,7 +1,10 @@
-# Certification Practices Platform.sh
+# Qu'est-ce que Platform.sh ?
 
+`Certification Practices Platform.sh 2022`
 
 ## [Une note sur DevOps](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/git-started.html#a-note-on-devops)
+
+`Certification Practices Platform.sh 2022`
 
 Si vous travaillez aujourd'hui sur un site Web de production, vous avez probablement rencontré le concept de DevOps, qui s'est développé en tant que philosophie pour aider à résoudre les problèmes récurrents liés au déploiement, à la maintenance et au test des sites Web de production. En adoptant [le processus, les outils et la culture](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-devops/) DevOps, cela promet des applications et des workflows cohérents, collaboratifs et sécurisés.
 
