@@ -19,7 +19,7 @@ Revenez à la page principale de votre projet et cliquez sur l'environnement `up
 
 Vous verrez une seule activité pour l'événement de branchement. Encore une fois, cliquez sur le menu déroulant de cette activité et affichez le journal.
 
-![Console platform.sh](./img/bo-017.jpg)
+![Console platform.sh](./img/bo-019.jpg)
 
 ```
 Creating branch refs/heads/updates from branch refs/heads/main
@@ -64,3 +64,24 @@ Ensuite, validez et transférez cette modification à Platform.sh :
 git add . && git commit -m "Update message for update branch."
 git push platform updates
 ```
+
+Vous constaterez que la modification de ce fichier a modifié l'état de votre référentiel, identifié par un nouvel ID d'arborescence (hash : 16ac3b1).
+
+```
+Processing activity: Tristano De Bartolo pushed to updates
+    Found 1 new commit
+    Building application 'app' (runtime type: php:8.0, tree: 16ac3b1)
+      Generating runtime configuration.
+```
+
+Un nouveau **build d'image** doit être créé pour ce nouvel état, et la phase de build recommence.
+
+![Console platform.sh](./img/bo-018.jpg)
+
+Si nous observons les informations de ce nouvel environnement, l'on peut constater que platform.sh à créer une `url` dédié à cette branche.
+
+![Console platform.sh](./img/bo-020.jpg)
+
+Consultez cette url pour constater les changements apportés au dernier `push`.
+
+![Console platform.sh](./img/bo-021.jpg)
