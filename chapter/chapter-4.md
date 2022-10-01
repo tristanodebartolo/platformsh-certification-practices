@@ -2,7 +2,7 @@
 
 ## [Créer un projet](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/git-started/first-project.html#create-a-project)
 
-> Ces prochaines opérations ne peuvent être réalisées que si l'on dispose d'un compte platform.sh avec un carte bancaire référencée. Nous allons poursuivre l'exercice pour la théorie, mais pour contourner la demande de carte bancaire du terminal, à la fin de cette section, nous allons créer le projet à partir du tableau de bord platform.sh, qui permet de créer des projets tests (avec 30 jours d'éssais), donc, si vous ne disposez pas de compte avec carte bancaire, poursuivez l'exercice et rdv à la fin de cette section pour créer le projet via le tableau de bord platform.sh.
+> Ces prochaines opérations ne peuvent être réalisées que si l'on dispose d'un compte platform.sh avec une carte bancaire référencée. Je vous propose de poursuivre l'exercice pour la théorie jusqu'à en lisant cette section, puis, pour contourner la demande de carte bancaire du terminal lors de la création de projet avec celui-ci, poursuivre en créant le projet à partir du tableau de bord platform.sh, qui permet de créer des projets tests (avec 30 jours d'éssais), donc, si vous ne disposez pas de compte avec carte bancaire, poursuivez l'exercice en mode lecture et rdv à la [fin de cette section](#pour-poursuivre) pour créer le projet via le tableau de bord platform.sh.
 
 Chaque fois que vous souhaitez déployer quelque chose sur Platform.sh, vous commencerez par créer un nouveau projet. Sur Platform.sh, un projet sera à peu près équivalent à votre référentiel. Autrement dit, un projet Platform.sh agira comme une télécommande (`Remote`) pour le référentiel de votre site.
 
@@ -42,9 +42,17 @@ platform project:set-remote PROJECT_ID
 
 Vous pouvez également récupérer l'ID du projet avec la commande `platform project:list`, qui répertorie tous vos projets et leurs ID dans un tableau.
 
+### [Avant de poursuivre](#pour-poursuivre)
+
+> Ouvrons le [tableau d'administration platform.sh](https://console.platform.sh/) pour créer un projet via l'interface graphique en [suivant les instructions suivantes](./chapter-4a.md).
+
+
+
 ## [Configurer une application](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/git-started/first-project.html#configure-an-application)
 
-À ce stade, vous avez créé un projet Platform.sh et l'avez configuré en tant que télécommande pour votre référentiel local. Avant de pousser, vous devez ajouter des fichiers qui indiquent à Platform.sh quoi faire avec l'application.
+> Vous avez, soit un compte relié à une carte bancaire, soit vous avez réalisé la procedure [Créer un projet via le BO platform](./chapter-4a.md), nous pouvons poursuivre la formation.
+
+À ce stade, vous avez créé un projet Platform.sh et l'avez configuré en tant que télécommande `Remote` pour votre référentiel local. Avant de pousser, vous devez ajouter des fichiers qui indiquent à Platform.sh quoi faire avec l'application.
 
 Le premier fichier important est `.platform.app.yaml`, qui configure la manière dont ce référentiel doit être construit et déployé.
 

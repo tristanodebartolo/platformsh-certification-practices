@@ -19,6 +19,7 @@ Assurez-vous de regarder attentivement la première page, car elle décrit les c
 2. [Commençons avec Git !](./chapter/chapter-2.md)
 3. [Qu'est-ce que Platform.sh ?](./chapter/chapter-3.md)
 4. [Déployez votre premier projet](./chapter/chapter-4.md)
+   - [Créer un projet via la console platform.sh](./chapter/chapter-4.md)
 5. [Qu'est-ce qui vient juste de se passer?](./chapter/chapter-5.md)
 6. []()
 7. []()

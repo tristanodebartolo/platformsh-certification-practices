@@ -148,3 +148,5 @@ Changes not staged for commit:
 git add .
 git commit -m "Init certification practices start files"
 ```
+
+- Nous pouvons ainsi retourner à la section [Configurer une application](./chapter-4.md#pour-poursuivre)

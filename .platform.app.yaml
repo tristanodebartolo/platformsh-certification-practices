@@ -1,0 +1,19 @@
+name: app
+
+type: 'php:8.0'
+
+build:
+    flavor: none
+
+dependencies:
+    php:
+        composer/composer: '^2'
+
+hooks:
+    build: composer install
+
+web:
+    locations:
+        "/":
+            root: "web"
+            passthru: "/index.php"
