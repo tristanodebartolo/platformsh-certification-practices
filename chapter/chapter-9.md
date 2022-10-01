@@ -20,7 +20,9 @@ platform environment:deactivate updates -y
 
 En visualisant le projet dans la console de gestion, vous ne pourrez voir l'environnement des `updates` que si le **filtre** *inactif* a été sélectionné.
 
-Bien que la branche `updates` existe toujours sans l'avoir supprimée, il s'agit désormais d'un environnement inactif. Il n'y a plus de site déployé `url` pour cet environnement.
+Bien que la branche `updates` existe toujours, il s'agit désormais d'un environnement inactif. Il n'y a plus de site déployé `url` pour cet environnement.
+
+![Build du projet](./img/bo-024.jpg)
 
 ### Données
 
@@ -39,6 +41,37 @@ mounts:
     'data':
         source: local
         source_path: data
+```
+
+Lors de l'exécution, le système de fichiers à partir duquel votre application s'exécute est en lecture seule. Vous avez vu dans le chapitre précédent comment cette règle permet d'exploiter Git afin que Platform.sh puisse réutiliser les builds des image.
+
+Cependant, de nombreuses applications nécessitent un accès en écriture à des parties du système de fichiers lors de l'exécution. Si vos utilisateurs téléchargent des fichiers sur votre site, le répertoire dans lequel vous conserveriez ces fichiers en est un exemple.
+
+Sur Platform.sh, vous devez définir explicitement ces types de répertoires en configurant un montage pour votre application à l'aide de l'attribut `mounts`. Ces répertoires ne contiennent pas de fichiers validés, uniquement des données. La modification ci-dessus définit un seul montage accessible dans le système de fichiers à `~/data`, et 512 Mo de disque lui ont été attribués.
+
+Localement, exécutez les commandes suivantes :
+
+```
+mkdir data && echo "First data file." > data/data.txt && echo data >> .gitignore
+```
+
+- `mkdir data`
+  - on crée un dossier qu'on nomme `data`
+- `&&`
+  - puis
+- `echo "First data file." > data/data.txt`
+  - on affiche `"First data file."` que l'on enregistre dans un fichier `data.txt` que l'on crée à la volée et que l'on range dans le dossier `data`
+- `&&`
+  - puis
+- `echo data >> .gitignore`
+  - on affiche `"data"` que l'on enregistre à la suite du fichier `.gitignore`, afin d'ignorer le contenu du dossier `data`.
+
+`data` est maintenant un sous-répertoire non suivit dans votre référentiel, contenant un fichier de données `data.txt`.
+
+Validez et poussez ce changement :
+
+```
+git commit -am "Add some data." && git push platform data
 ```
 
 
