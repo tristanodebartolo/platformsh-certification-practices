@@ -87,7 +87,11 @@ Redeploying environment add-db
     db (type: mariadb:10.4, size: S, disk: 2048)
 ```
 
+![Build du projet](./img/bo-029.jpg)
+
 Il y aura également une nouvelle icône `db` affichée dans le graphique **Apps & Services** dans le coin inférieur gauche de la page.
+
+![Build du projet](./img/bo-030.jpg)
 
 Une fois l'activité push terminée sur l'environnement **add-db**, connectez-vous en SSH au conteneur d'application :
 
@@ -105,28 +109,28 @@ echo $PLATFORM_RELATIONSHIPS | base64 --decode | jq
 
 ```json
 {
-  "database": [
-    {
-      "username": "user",
-      "scheme": "mysql",
-      "service": "db",
-      "fragment": null,
-      "ip": "169.254.196.237",
-      "hostname": "u2dapcb6prp3ezpqz6mtlp3hbu.db.service._.us-3.platformsh.site",
-      "public": false,
-      "cluster": "cbvgw7mkrf7bu-add-db-gagrtoi",
-      "host": "database.internal",
-      "rel": "mysql",
-      "query": {
-        "is_master": true
-      },
-      "path": "main",
-      "password": "",
-      "type": "mariadb:10.4",
-      "port": 3306,
-      "host_mapped": false
-    }
-  ]
+    "database": [
+        {
+            "username": "user",
+            "scheme": "mysql",
+            "service": "db",
+            "fragment": null,
+            "ip": "169.254.158.224",
+            "hostname": "aslywrq2ljvcthonktrqk46p5e.db.service._.fr-4.platformsh.site",
+            "public": false,
+            "cluster": "rd33ou34jopkc-add-db-gagrtoi",
+            "host": "database.internal",
+            "rel": "mysql",
+            "query": {
+                "is_master": true
+            },
+            "path": "main",
+            "password": "",
+            "type": "mariadb:10.4",
+            "port": 3306,
+            "host_mapped": false
+        }
+    ]
 }
 ```
 
@@ -135,6 +139,8 @@ Vous pouvez rapidement tester ces informations d'identification avec la commande
 ```
 mysql -h database.internal -P 3306 -u user main
 ```
+
+> Quittez la session avec `ctrl+d` ou `exit`.
 
 Vous verrez que le nom de la relation devient la clé de niveau supérieur dans l'objet `PLATFORM_RELATIONSHIPS`, mais aussi l'adresse de l'hôte :
 
@@ -158,7 +164,7 @@ DB_PATH=$(echo $PLATFORM_RELATIONSHIPS | base64 --decode | jq -r '.database[0].p
 mysql -h $DB_HOST -P $DB_PORT -u $DB_USER $DB_PATH
 ```
 
-Quittez la session avec `ctrl+d` ou `exit`.
+> Quittez la session avec `ctrl+d` ou `exit`.
 
 Vous remarquerez dans l'objet `PLATFORM_RELATIONSHIPS` de la base de données qu'il n'y a pas de mot de passe présent. Certains services contiennent des mots de passe par défaut, mais pas tous.
 
