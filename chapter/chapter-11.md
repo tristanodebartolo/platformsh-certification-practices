@@ -92,9 +92,9 @@ TABLE;
 }
 ```
 
-Ce nouveau fichier utilise les variables définies dans `.environment` pour
+Ce fichier utilise les variables définies dans `.environment` pour
 
-1. Se connecter àla base de donnée
+1. Se connecter à la base de donnée
 2. Créer une nouvelle table et ajouter de la donnée
 3. Affichez le tableau sur le site déployé.
 
