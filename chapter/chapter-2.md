@@ -1,6 +1,6 @@
 # Commençons avec Git !
 
-`Platform.sh Certification Practices 2022`
+`Platform.sh Certification Practices 2022` | [Chapitre précédent](./chapter-1.md) | [Sommaire](../README.md) | [Chapitre suivant](./chapter-3.md)
 
 ## [Aperçu](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics.html#overview)
 

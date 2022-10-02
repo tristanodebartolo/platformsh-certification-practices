@@ -1,6 +1,6 @@
 # Créer un service
 
-`Platform.sh Certification Practices 2022`
+`Platform.sh Certification Practices 2022` | [Chapitre précédent](./chapter-9.md) | [Sommaire](../README.md) | [Chapitre suivant](./chapter-11.md)
 
 ## [Nettoyage](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/data-services/add-services.html#cleanup)
 

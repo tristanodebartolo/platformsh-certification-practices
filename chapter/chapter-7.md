@@ -1,6 +1,6 @@
 # Fusionnez votre révision
 
-`Platform.sh Certification Practices 2022`
+`Platform.sh Certification Practices 2022` | [Chapitre précédent](./chapter-6.md) | [Sommaire](../README.md) | [Chapitre suivant](./chapter-8.md)
 
 ## [Fusionner](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/git-started/merge.html#merge)
 

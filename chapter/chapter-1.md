@@ -1,6 +1,6 @@
 # [A quoi servent ces guides ?](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted.html#what-are-these-guides-for)
 
-`Platform.sh Certification Practices 2022`
+`Platform.sh Certification Practices 2022` [Sommaire](../README.md) | [Chapitre suivant](./chapter-2.md)
 
 Platform.sh est une solution DevOps flexible et hautement personnalisable pour le déploiement d'applications Web. Cela dit, il y a quelques règles et quelques connaissances de base en configuration que vous devrez connaître pour commencer à l'utiliser.
 

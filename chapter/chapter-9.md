@@ -1,6 +1,6 @@
 # Montrez-moi les données
 
-`Platform.sh Certification Practices 2022`
+`Platform.sh Certification Practices 2022` | [Chapitre précédent](./chapter-8.md) | [Sommaire](../README.md) | [Chapitre suivant](./chapter-10.md)
 
 ## [Ajouter des données](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/data-services/mounts.html#add-data)
 

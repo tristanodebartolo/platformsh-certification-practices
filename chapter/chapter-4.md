@@ -1,6 +1,6 @@
 # Déployez votre premier projet
 
-`Platform.sh Certification Practices 2022`
+`Platform.sh Certification Practices 2022` | [Chapitre précédent](./chapter-4.md) | [Sommaire](../README.md) | [Chapitre suivant](./chapter-5.md)
 
 ## [Créer un projet](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/git-started/first-project.html#create-a-project)
 

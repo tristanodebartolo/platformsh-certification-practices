@@ -1,6 +1,6 @@
 # Déployez un projet via la console.platform.sh
 
-`Platform.sh Certification Practices 2022`
+`Platform.sh Certification Practices 2022` | [Déployez votre premier projet](./chapter-4.md) | [Sommaire](../README.md) | [Que s'est-il passé](./chapter-6.md)
 
 ## Créer un projet via le BO platform
 

@@ -1,6 +1,6 @@
 # [Create an environment](https://master-7rqtwti-4mh7eev5ydrdo.eu-3.platformsh.site/getstarted/basics/git-started/branch.html#create-an-environment)
 
-`Platform.sh Certification Practices 2022`
+`Platform.sh Certification Practices 2022` | [Chapitre précédent](./chapter-5.md) | [Sommaire](../README.md) | [Chapitre suivant](./chapter-7.md)
 
 ## Création d'une nouvelle branche de travail
 
