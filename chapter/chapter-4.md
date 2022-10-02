@@ -227,5 +227,9 @@ https://main-bvxea6i-rd33ou34jopkc.fr-4.platformsh.site/
 
 ![Console platform.sh](./img/bo-013.jpg)
 
+## Liens
+
+- [App reference doc](https://docs.platform.sh/create-apps/app-reference.html)
+
 [Chapitre précédent](./chapter-3.md) | [Sommaire](../README.md) | [Chapitre suivant](./chapter-5.md)
 
