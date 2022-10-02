@@ -90,4 +90,8 @@ git branch -M main
 git push -u origin main
 ```
 
+## Liens
+
+- [Source Integrations doc](https://docs.platform.sh/integrations/source.html)
+
 [Chapitre précédent](./chapter-x.md) | [Sommaire](../README.md) | [Chapitre suivant](./chapter-x.md)
