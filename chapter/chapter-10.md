@@ -178,5 +178,13 @@ Sinon, tout reste isolé, ce qui rend vos environnements et vos données sécuri
 
 Maintenant que vous avez ajouté un service et que vous pouvez vous connecter à ce service via des variables d'environnement, l'étape suivante consiste à utiliser ces connaissances pour interagir avec la base de données directement depuis votre application.
 
+## Liens
+
+- [MariaDB/MySQL (database service)](https://docs.platform.sh/add-services/mysql.html)
+- [Configurer le service](https://docs.platform.sh/add-services/mysql.html#1-configure-the-service)
+- [Relationship reference](https://docs.platform.sh/add-services/mysql.html#relationship-reference)
+- [Multiple databases](https://docs.platform.sh/add-services/mysql.html#multiple-databases)
+- [Exporter](https://docs.platform.sh/add-services/mysql.html#exporting-data)
+- [Importer](https://docs.platform.sh/add-services/mysql.html#importing-data)
 
 [Chapitre précédent](./chapter-9.md) | [Sommaire](../README.md) | [Chapitre suivant](./chapter-11.md)
